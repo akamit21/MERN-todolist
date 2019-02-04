@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+	head
+		title List :: BasiC Node|MySQL|Express|Pug
+		style
+			include ../assets/style.css
+	body
+		h1 View List
+	table
+		for person in personList
+			tr
+				td= person.id
+				td
+					a(href='/person/'+person.id) #{person.name}
+				td= person.address
+				td= person.phone
