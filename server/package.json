@@ -1,15 +1,16 @@
 {
-  "name": "basic_pug",
-  "version": "1.0.0",
-  "description": "basic node-mysql-express-pug-project",
+  "name": "mern_todolist",
+  "version": "1.0.1",
+  "description": "Basic MERN Todolist dummy project.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "test": "mocha"
   },
   "keywords": [
     "node",
-    "mysql",
+    "mongo",
     "express",
     "pug",
     "project"
@@ -20,14 +21,19 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.5",
+    "debug": "^4.1.1",
     "express": "^4.17.1",
     "express-flash": "0.0.2",
-    "express-myconnection": "^1.0.4",
-    "express-session": "^1.15.6",
     "express-validator": "^5.3.1",
+    "http-errors": "^1.7.3",
     "method-override": "^3.0.0",
     "mongoose": "^5.9.2",
-    "nodemon": "^2.0.2",
+    "morgan": "^1.10.0",
     "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
   }
 }
